@@ -1,6 +1,7 @@
+---
+
 - hosts: localhost
   become: true
   tasks:
-  - slackpkg:
-    name: ranger
-    state: present
+  - name: install ranger
+  - slackpkg: name=ranger state present
